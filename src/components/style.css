@@ -1,0 +1,290 @@
+@import url("https://fonts.cdnfonts.com/css/anglecia-pro-display");
+
+/* Navbar CSS */
+nav {
+  background-color: #000000;
+}
+
+/* Change size of logo */
+nav > .container > .navbar-brand {
+  width: 5%;
+}
+
+/* Underline in hover  */
+.nav-item {
+  font-family: "Anglecia Pro Display";
+  font-style: normal;
+  font-size: 1vw;
+  margin-right: 5%;
+  line-height: 24px;
+  width: 100%;
+  white-space: nowrap;
+}
+
+.nav-item {
+  color: #fff;
+  letter-spacing: 0.15em;
+  display: inline-block;
+  position: relative;
+}
+.nav-item:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #fff;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+.nav-item:hover:after {
+  width: 100%;
+  left: 0;
+  color: #fff;
+}
+
+#call {
+  font-family: "Anglecia Pro Display";
+}
+
+/* Hero CSS */
+/* Full page background image */
+
+.hero {
+  /* The image used */
+  background-image: url("../assets/hero-background-image.webp");
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 15%;
+}
+.hero-infos {
+  background: linear-gradient(
+    152.97deg,
+    rgba(255, 255, 255, 0.2) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  border: 1px solid #ffffff;
+  -webkit-backdrop-filter: blur(21px);
+  backdrop-filter: blur(21px);
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 5%;
+
+  padding-bottom: 5%;
+}
+.hero-title {
+  font-family: "Anglecia Pro Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 96px;
+  line-height: 96px;
+  /* identical to box height */
+
+  letter-spacing: 1em;
+  text-transform: uppercase;
+
+  color: #ffffff;
+  text-align: center;
+}
+.hero-caption {
+  font-family: "Anglecia Pro Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+  /* identical to box height */
+
+  color: #ffffff;
+}
+
+.hero > .container > a {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 33px;
+  /* identical to box height */
+
+  color: #000000;
+  transition: all 0.3s 0s linear;
+  -webkit-transition: all 0.3s 0s linear;
+  -moz-transition: all 0.3s 0s linear;
+  -o-transition: all 0.3s 0s linear;
+}
+.hero > .container > a:hover {
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  background-color: white;
+}
+
+/* Elements CSS */
+.container > .row {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  flex-direction: row;
+}
+.restaurant-title {
+  font-family: "Anglecia Pro Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 64px;
+  /* identical to box height */
+  letter-spacing: 0.35em;
+  color: #000000;
+}
+.restaurant-subtitle {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 33px;
+
+  color: #000000;
+}
+
+.read-more-button {
+  border: 2px solid #000000;
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 33px;
+  text-decoration: none;
+  color: #000000;
+  padding: 2% 3% 2% 3%;
+}
+#restaurant {
+  margin-top: 15%;
+}
+
+#menu {
+  margin-top: 15%;
+}
+
+#about-us {
+  margin-top: 15%;
+}
+#our-client {
+  margin-top: 15%;
+}
+.title {
+  font-family: "Anglecia Pro Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 64px;
+  color: #000000;
+}
+.sas {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 33px;
+  color: #000000;
+  text-decoration: none;
+  cursor: pointer;
+}
+#user {
+  margin-top: 5%;
+}
+#user > div > h1 {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 66px;
+  /* identical to box height */
+
+  color: #000000;
+}
+#user > div > h6 {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 33px;
+  /* identical to box height */
+
+  color: #000000;
+}
+#user > div > p {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 33px;
+
+  color: #000000;
+}
+
+/* Footer CSS */
+.phoneNumber {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 27px;
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+}
+.locationOfObject {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 27px;
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+}
+.timeOfWorking {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 27px;
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+}
+.CC {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 44px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #ffffff;
+}
+.followUs {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 44px;
+  /* identical to box height */
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #ffffff;
+}
