@@ -1,0 +1,67 @@
+/* This document is only for pages desing and not external files who contains other design from other CSS file */
+
+#homeLink {
+  color: #000000;
+  opacity: 25%;
+}
+.breadcrumb {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 33px;
+}
+
+#menuSection {
+  margin-top: 5%;
+}
+
+#menuTitle {
+  font-family: "Anglecia Pro Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 64px;
+  color: #000000;
+}
+#menuDescription {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 33px;
+  /* identical to box height */
+
+  color: #000000;
+}
+
+#foodCategory {
+  width: 100%;
+  padding: 1%;
+  background: #ffffff;
+
+  text-align: center;
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 33px;
+  color: #000000;
+  cursor: pointer;
+  border: 2px solid #000000;
+  transition:  0.5s 0s linear;
+  border-radius: 10px;
+}
+
+#foodCategory:hover {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 25px;
+}
+.bootCols{
+  height:100px;
+  margin:0;
+  box-sizing:border-box;
+  padding:5px;
+  border:2px solid black;
+  background-color:red;
+}
