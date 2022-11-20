@@ -1,16 +1,38 @@
 export const tabs = [
   {
     id: 1,
-    food_category: "Breakfeast",
+    food_category: "Mengjesi",
     title: "Title 1",
-    content:
-      "Las tabs se generan automáticamente a partir de un array de objetos, el cual tiene las propiedades: id, tabTitle, title y content.",
+    foods: [
+      {
+        image:
+          "https://www.pngmart.com/files/5/Pancakes-PNG-Transparent-Image.png",
+        name: "Llokuma",
+        ingredients: "Djath,ajvar,gjem,nutella",
+        price : "2.50 €"
+      },
+      {
+        name: "Vezë",
+      },
+      {
+        name: "Proshut",
+      },
+    ],
   },
   {
     id: 2,
     food_category: "Cold appetizers",
     title: "Title 2",
     content: "Contenido de tab 2.",
+    foods: [
+      { id: "1.2", name: "Omlet 2" },
+      {
+        name: "Vezë",
+      },
+      {
+        name: "Proshut",
+      },
+    ],
   },
   {
     id: 3,
@@ -43,15 +65,15 @@ export const tabs = [
     content: "Contenido de tab 4.",
   },
   {
-    id: 4,
+    id: 8,
     food_category: "Fish",
     title: "Title 4",
-    content: "Contenido de tab 4.",
+    content: "Contenido de tab 4. 2",
   },
   {
-    id: 4,
+    id: 9,
     food_category: "Desserts",
     title: "Title 4",
-    content: "Contenido de tab 4.",
+    content: "Contenido de tab 4.3",
   },
 ];

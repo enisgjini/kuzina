@@ -69,19 +69,33 @@ function Menu() {
         </nav>
         <br />
         <div className="content">
-          {tabs.map((tab, i) => (
-            <div key={i}>
-              {currentTab === `${tab.id}` && (
-                <div>
-                  <p className="title">{tab.title}</p>
-                  <p>{tab.content}</p>
-                </div>
-              )}
-            </div>
-          ))}
+          <div class="row">
+            {tabs.map((tab, i) => (
+              <>
+                {currentTab === `${tab.id}` && (
+                  <>
+                    {tab.foods.map((addVal, j) => {
+                      return (
+                        <div
+                          key={"add" + j}
+                          class="col-md-3 col-sm-6 col-xs-12  bootCols "
+                        >
+                          <img src={addVal.image} alt="" className="w-100"/>
+                          <hr />
+                          <p className="nameOfFood">{addVal.name}</p>
+                          <p>{addVal.ingredients}</p>
+                          <p>{addVal.price}</p>
+                        </div>
+                      );
+                    })}
+                  </>
+                )}
+              </>
+            ))}
+          </div>
         </div>
       </div>
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 }
