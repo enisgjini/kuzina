@@ -61,14 +61,14 @@ function Menu() {
               id={tab.id}
               disabled={currentTab === `${tab.id}`}
               onClick={handleTabClick}
-              className="nav-link"
+              className="nav-link active text-dark"
             >
               {tab.food_category}
             </a>
           ))}
         </nav>
         <br />
-        <div className="content">
+        <div className="container-fluid">
           <div class="row">
             {tabs.map((tab, i) => (
               <>
@@ -78,9 +78,9 @@ function Menu() {
                       return (
                         <div
                           key={"add" + j}
-                          class="col-md-3 col-sm-6 col-xs-12  bootCols "
+                          class="col-md-4 col-sm-6 col-xs-12  bootCols"
                         >
-                          <img src={addVal.image} alt="" className="w-100"/>
+                          <img src={addVal.image} alt="" className="w-100 img-thumbnail"/>
                           <hr />
                           <p className="nameOfFood">{addVal.name}</p>
                           <p>{addVal.ingredients}</p>
@@ -95,7 +95,8 @@ function Menu() {
           </div>
         </div>
       </div>
-      {/* <Footer /> */}
+      <br />
+      <Footer />
     </>
   );
 }

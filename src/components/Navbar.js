@@ -6,14 +6,18 @@ import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 
 import Home from "../Pages/Home";
 import Menu from "../Pages/Menu";
-import Profile from "../Pages/Profile";
+import About from "../Pages/About";
+import Contacts from "../Pages/Contacts";
 import ErrorPage from "../Pages/ErrorPage";
 
 function Navbar() {
   return (
     <>
       <Router>
-        <nav className="navbar navbar-expand navbar-dark fixed-top" style={{ backgroundColor: "black" }}>
+        <nav
+          className="navbar navbar-expand navbar-dark fixed-top"
+          style={{ backgroundColor: "black" }}
+        >
           <div className="container">
             <img src={logo} alt="" className="navbar-brand" />
 
@@ -44,9 +48,9 @@ function Navbar() {
                   </Link>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="#">
+                  <Link to="/About-us" className="nav-link">
                     About Us
-                  </a>
+                  </Link>
                 </li>
                 <li className="nav-item">
                   <a className="nav-link" href="#">
@@ -54,9 +58,9 @@ function Navbar() {
                   </a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="#">
+                  <Link to="/Contacts" className="nav-link">
                     Contacts
-                  </a>
+                  </Link>
                 </li>
               </ul>
               <div className="d-flex" role="search" id="call">
@@ -85,11 +89,11 @@ function Navbar() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/Menu" element={<Menu />} />
-          <Route path="/profile/:username" element={<Profile />} />
+          <Route path="/About-us" element={<About />} />
+          <Route path="/Contacts" element={<Contacts />} />
           <Route path="*" element={<ErrorPage />} />
         </Routes>
       </Router>
-      
     </>
   );
 }
