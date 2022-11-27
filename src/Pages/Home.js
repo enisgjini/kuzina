@@ -2,23 +2,24 @@ import React from "react";
 import Elements from "../components/Elements";
 import Footer from "../components/Footer";
 import "../components/style.css";
+import { Link } from "react-router-dom";
 function Home() {
   return (
     <>
       <div className="hero">
-        <div className="container hero-infos">
+        <div className="container hero-infos text-center">
           <h1 className="hero-title">Kuzina</h1>
-          <p className="hero-caption pt-5">Best restaurant in prishtina</p>
-          <a
-            href="../App.js"
+          <p className="hero-caption pt-5">Best restaurant in Prishtina</p>
+          <Link
+            to="/Menu"
             className="btn btn-light ps-5 pe-5 pt-3 pb-3 mt-5 rounded-0"
           >
             See menu
-          </a>
+          </Link>
         </div>
-      </div>
+      </div>{" "}
       <Elements />
-      <Footer/>
+      <Footer />
     </>
   );
 }

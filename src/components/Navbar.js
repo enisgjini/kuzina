@@ -18,11 +18,12 @@ function Navbar() {
           className="navbar navbar-expand navbar-dark fixed-top"
           style={{ backgroundColor: "black" }}
         >
-          <div className="container">
-            <img src={logo} alt="" className="navbar-brand" />
-
+          <div className="container-fluid">
+            <Link to="/" aria-current="page" className="navbar-brand">
+              <img src={logo} alt="" className="" />
+            </Link>
             <button
-              className="navbar-toggler"
+              class="navbar-toggler"
               type="button"
               data-bs-toggle="collapse"
               data-bs-target="#navbarSupportedContent"
@@ -30,13 +31,10 @@ function Navbar() {
               aria-expanded="false"
               aria-label="Toggle navigation"
             >
-              <span className="navbar-toggler-icon"></span>
+              <span class="navbar-toggler-icon"></span>
             </button>
-            <div
-              className="collapse navbar-collapse"
-              id="navbarSupportedContent"
-            >
-              <ul className="navbar-nav mx-auto">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                 <li className="nav-item">
                   <Link to="/" className="nav-link" aria-current="page">
                     Home
@@ -52,28 +50,23 @@ function Navbar() {
                     About Us
                   </Link>
                 </li>
-                <li className="nav-item">
-                  <a className="nav-link" href="#">
-                    Events
-                  </a>
-                </li>
+
                 <li className="nav-item">
                   <Link to="/Contacts" className="nav-link">
                     Contacts
                   </Link>
                 </li>
               </ul>
-              <div className="d-flex" role="search" id="call">
+              <div className="d-flex" role="search">
                 <button
                   className="btn btn-outline-dark text-white"
                   type="submit"
                 >
-                  <i class="fi fi-rr-phone-call"></i>{" "}
+                  <i class="fi fi-rr-phone-call"></i>
                   <a
                     href="tel:8665562570"
                     className="text-decoration-none text-white "
                   >
-                    {" "}
                     +383 (0) 49 494 494
                   </a>
                 </button>

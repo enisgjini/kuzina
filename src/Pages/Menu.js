@@ -11,9 +11,9 @@ import "./pages.css";
 import { tabs } from "./DATA";
 
 function Menu() {
-  const location = useLocation();
+  // const location = useLocation();
   let path = window.location.pathname.replace(/\/+$/, "");
-  path = path[0] == "/" ? path.substr(1) : path;
+  path = path[0] === "/" ? path.substr(1) : path;
 
   const [currentTab, setCurrentTab] = useState("1");
 
@@ -62,37 +62,40 @@ function Menu() {
               disabled={currentTab === `${tab.id}`}
               onClick={handleTabClick}
               className="nav-link active text-dark"
+              href="#"
             >
               {tab.food_category}
             </a>
           ))}
         </nav>
         <br />
-        <div className="container-fluid">
-          <div class="row">
-            {tabs.map((tab, i) => (
-              <>
-                {currentTab === `${tab.id}` && (
-                  <>
-                    {tab.foods.map((addVal, j) => {
-                      return (
-                        <div
-                          key={"add" + j}
-                          class="col-md-4 col-sm-6 col-xs-12  bootCols"
-                        >
-                          <img src={addVal.image} alt="" className="w-100 img-thumbnail"/>
+
+        <div class="row">
+          {tabs.map((tab, i) => (
+            <>
+              {currentTab === `${tab.id}` && (
+                <>
+                  {tab.foods.map((addVal, j) => {
+                    return (
+                      <div key={"add" + j} class="col-lg-4 col-md-4 col-xs-12 mb-5">
+                        <div className="bootCols">
+                          <img
+                            src={addVal.image}
+                            alt=""
+                            className="productImage"
+                          />
                           <hr />
                           <p className="nameOfFood">{addVal.name}</p>
                           <p>{addVal.ingredients}</p>
                           <p>{addVal.price}</p>
                         </div>
-                      );
-                    })}
-                  </>
-                )}
-              </>
-            ))}
-          </div>
+                      </div>
+                    );
+                  })}
+                </>
+              )}
+            </>
+          ))}
         </div>
       </div>
       <br />

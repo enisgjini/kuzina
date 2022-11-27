@@ -1,16 +1,18 @@
 @import url("https://fonts.cdnfonts.com/css/anglecia-pro-display");
-@import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Manrope&display=swap");
 
 /* Navbar CSS */
 nav {
   background-color: #000000;
 }
 
-/* Change size of logo */
+/* Change size of logo
 nav > .container > .navbar-brand {
   width: 5%;
+} */
+.logo {
+  max-height: 70px;
 }
-
 /* Underline in hover  */
 .nav-item {
   font-family: "Anglecia Pro Display";
@@ -76,10 +78,7 @@ nav > .container > .navbar-brand {
   -webkit-backdrop-filter: blur(21px);
   backdrop-filter: blur(21px);
   border-radius: 15px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  text-align: center;
   padding-top: 5%;
 
   padding-bottom: 5%;
@@ -90,11 +89,8 @@ nav > .container > .navbar-brand {
   font-weight: 400;
   font-size: 96px;
   line-height: 96px;
-  /* identical to box height */
-
   letter-spacing: 1em;
   text-transform: uppercase;
-
   color: #ffffff;
   text-align: center;
 }
@@ -136,26 +132,38 @@ nav > .container > .navbar-brand {
   align-content: center;
   flex-direction: row;
 }
-.restaurant-title {
+.titleOfSection {
   font-family: "Anglecia Pro Display";
   font-style: normal;
   font-weight: 400;
   font-size: 64px;
   line-height: 64px;
-  /* identical to box height */
   letter-spacing: 0.35em;
   color: #000000;
 }
-.restaurant-subtitle {
+.paragraphOfSection {
   font-family: "Manrope";
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
   line-height: 33px;
-
-  color: #000000;
 }
+@media screen and (max-width: 425px) {
+  .imageOfSection {
+    display: none;
+  }
+  .titleOfSection {
+    font-family: "Anglecia Pro Display";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 64px;
 
+    letter-spacing: 0.35em;
+
+    color: #000000;
+  }
+}
 .read-more-button {
   border: 2px solid #000000;
   font-family: "Manrope";
@@ -202,7 +210,10 @@ nav > .container > .navbar-brand {
 #user {
   margin-top: 5%;
 }
-#user > div > h1 {
+.slide {
+  padding: 1%;
+}
+.slide > h1 {
   font-family: "Manrope";
   font-style: normal;
   font-weight: 400;
@@ -212,7 +223,7 @@ nav > .container > .navbar-brand {
 
   color: #000000;
 }
-#user > div > h6 {
+.slide > h6 {
   font-family: "Manrope";
   font-style: normal;
   font-weight: 400;
@@ -222,7 +233,7 @@ nav > .container > .navbar-brand {
 
   color: #000000;
 }
-#user > div > p {
+.slide > p {
   font-family: "Manrope";
   font-style: normal;
   font-weight: 400;

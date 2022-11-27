@@ -1,14 +1,14 @@
 import "./App.css";
 import Elements from "./components/Elements";
 import Footer from "./components/Footer";
-import Hero from "./components/Hero";
-import Navbar from "./components/Navbar";
+// import Hero from "./components/Hero";
+import Navbar1 from "./components/Navbar1";
 // import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 
 function App() {
   return (
     <div className="App">
-      <Navbar />
+      <Navbar1 />
       {/* <Hero />
       <br />
       <Elements />
