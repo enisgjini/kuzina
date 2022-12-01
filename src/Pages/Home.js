@@ -6,9 +6,10 @@ import { Link } from "react-router-dom";
 function Home() {
   return (
     <>
+    <br />
       <div className="hero">
-        <div className="container hero-infos text-center">
-          <h1 className="hero-title">Kuzina</h1>
+        <div className="container hero-infos mx-auto">
+          <h1 className="heroTitle  text-wrap">Kuzina</h1>
           <p className="hero-caption pt-5">Best restaurant in Prishtina</p>
           <Link
             to="/Menu"

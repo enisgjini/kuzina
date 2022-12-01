@@ -83,16 +83,15 @@ nav > .container > .navbar-brand {
 
   padding-bottom: 5%;
 }
-.hero-title {
+.heroTitle {
   font-family: "Anglecia Pro Display";
   font-style: normal;
   font-weight: 400;
   font-size: 96px;
   line-height: 96px;
-  letter-spacing: 1em;
+  letter-spacing: 0.5em;
   text-transform: uppercase;
   color: #ffffff;
-  text-align: center;
 }
 .hero-caption {
   font-family: "Anglecia Pro Display";
@@ -132,6 +131,12 @@ nav > .container > .navbar-brand {
   align-content: center;
   flex-direction: row;
 }
+
+.container > .homeSections {
+  margin-top: 15%;
+  margin-bottom: 10%;
+  
+}
 .titleOfSection {
   font-family: "Anglecia Pro Display";
   font-style: normal;
@@ -163,8 +168,21 @@ nav > .container > .navbar-brand {
 
     color: #000000;
   }
+
+  .heroTitle {
+    font-family: "Anglecia Pro Display";
+    font-style: normal;
+    font-weight: 400;
+    width: 100%;
+    font-size: 24px;
+    line-height: 96px;
+    letter-spacing: 1em;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-align: center;
+  }
 }
-.read-more-button {
+.readMoreButton {
   border: 2px solid #000000;
   font-family: "Manrope";
   font-style: normal;
@@ -175,10 +193,18 @@ nav > .container > .navbar-brand {
   color: #000000;
   padding: 2% 3% 2% 3%;
 }
-#restaurant {
-  margin-top: 15%;
+.linkToAboutUs {
+  text-decoration: none;
+  color: #000000;
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 33px;
+  color: #000000;
+  text-decoration: none;
+  cursor: pointer;
 }
-
 #menu {
   margin-top: 15%;
 }
@@ -197,16 +223,6 @@ nav > .container > .navbar-brand {
   line-height: 64px;
   color: #000000;
 }
-.sas {
-  font-family: "Manrope";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 33px;
-  color: #000000;
-  text-decoration: none;
-  cursor: pointer;
-}
 #user {
   margin-top: 5%;
 }
@@ -219,8 +235,6 @@ nav > .container > .navbar-brand {
   font-weight: 400;
   font-size: 32px;
   line-height: 66px;
-  /* identical to box height */
-
   color: #000000;
 }
 .slide > h6 {

@@ -11,7 +11,7 @@ import { Link } from "react-router-dom";
 function Elements() {
   return (
     <div className="container">
-      <div className="row gx-5 mx-auto" id="restaurant">
+      <div className="row gx-5 mx-auto homeSections">
         <div className="col-md-6 col-xs-12 " id="restaurant-image">
           <img
             src={RestaurantWallpaper}
@@ -19,7 +19,7 @@ function Elements() {
             className="img-fluid imageOfSection"
           />
         </div>
-        <div className=" col-md-6 col-xs-12">
+        <div className=" col-md-6 col-xs-12 mb-5 ">
           <h1 className="titleOfSection">Restaurant</h1>
           <br />
           <p className="paragraphOfSection">
@@ -28,22 +28,22 @@ function Elements() {
             molestie ac feugiat sed lectus vestibulum mattis ullamcorper.
           </p>
           <br />
-          <Link to="/About-us" className="read-more-button">
+          <Link to="/About-us" className="readMoreButton">
             Read more
           </Link>
         </div>
       </div>
-      <div className="row gx-5 mx-auto">
-        <div className=" col-md-6 col-xs-12">
+      <div className="row gx-5 mx-auto homeSections">
+        <div className=" col-md-6 col-xs-12 mb-5">
           <h1 className="titleOfSection">Menu</h1>
           <br />
-          <p className="restaurant-subtitle">
+          <p className="paragraphOfSection">
             Cras tincidunt lobortis feugiat vivamus at augue eget arcu dictum
             varius duis at consectetur lorem donec massa sapien faucibus et
             molestie ac feugiat sed lectus vestibulum mattis ullamcorper.
           </p>
           <br />
-          <Link to="/Menu" className="read-more-button">
+          <Link to="/Menu" className="readMoreButton">
             Go to menu
           </Link>
         </div>
@@ -55,7 +55,7 @@ function Elements() {
           />
         </div>
       </div>
-      <div className="row gx-5">
+      <div className="row gx-5 mx-auto homeSections">
         <div className="col-md-6 col-xs-12 ">
           <img
             src={RestaurantWallpaper3}
@@ -63,16 +63,16 @@ function Elements() {
             className="img-fluid imageOfSection"
           />
         </div>
-        <div className=" col-md-6 col-xs-12" id="menu-description">
-          <h1 className="restaurant-title">About us</h1>
+        <div className=" col-md-6 col-xs-12 mb-5" id="menu-description">
+          <h1 className="titleOfSection">About us</h1>
           <br />
-          <p className="restaurant-subtitle">
+          <p className="paragraphOfSection">
             Cras tincidunt lobortis feugiat vivamus at augue eget arcu dictum
             varius duis at consectetur lorem donec massa sapien faucibus et
             molestie ac feugiat sed lectus vestibulum mattis ullamcorper.
           </p>
           <br />
-          <Link to="/About-us" className="read-more-button">
+          <Link to="/About-us" className="readMoreButton">
             Read more
           </Link>
         </div>

@@ -22,7 +22,7 @@ function Menu() {
   };
   return (
     <>
-      <div className="container mt-5">
+      <div className="container ">
         {/* Breadcrumb of site , try later to make dynamic */}
         <nav aria-label="breadcrumb" className="bg-white">
           <ol className="breadcrumb">
@@ -33,7 +33,7 @@ function Menu() {
             </li>
             <li className="breadcrumb-item"></li>
             <li
-              className="text-decoration-none"
+              className="text-decoration-none "
               aria-current="page"
               id="locationPath"
             >
